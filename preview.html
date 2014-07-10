@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<title>Preview</title>
+	<meta charset="UTF-8">
+	<link rel=stylesheet type="text/css" href="preview.css" />  
+	<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="preview.js"></script>
+	<script type="text/javascript" src="post.js"></script>
+	<script type="text/javascript" src="analyticsLoader.js"></script>
+</head>
+<body>
+	<div id="preview">
+		<ul class="pages">	
+			<li class="page_container">
+				<div class="posts_wrapper">
+					<ul class="posts">
+					</ul
+				</div>
+			</li>
+		</ul>
+	</div>
+	<ul id ="controlArea">
+		<li id="bg_fill" class="controls">
+			<input type="radio" name="bg_fill" id="bg_normal" value="bg_fill_normal" /><label for="bg_normal"></label>
+			<input type="radio" name="bg_fill" id="bg_stripe" value="bg_fill_stripe" /><label for="bg_stripe"></label>
+			<input type="radio" name="bg_fill" id="bg_dot" value="bg_fill_dot" /><label for="bg_dot"></label>
+		</li>
+		<li id="bg_area" class="controls">
+			<input type="radio" name="bg_area" id="bg_full" value="bg_area_full" /><label for="bg_full"></label>
+			<input type="radio" name="bg_area" id="bg_min" value="bg_area_min" /><label for="bg_min"></label>
+			<input type="radio" name="bg_area" id="bg_none" value="bg_area_none" /><label for="bg_none"></label>
+		</li>
+		<li id="optionCtrl" class="controls">
+			<input type="checkbox" name="op" id="op_note" value="op_note" /><label for="op_note"></label>
+			<input type="checkbox" name="op" id="op_avatar" value="op_avatar" /><label for="op_avatar"></label>
+			<input type="checkbox" name="op" id="op_trim" value="op_trim" /><label for="op_trim"></label>
+		</li>
+		<li id="printCtrl" class="controls">
+			<button id="printBtn"></button>
+		</li>
+	</ul>
+	<div id="loading" class="none">
+		<div id='b_1' class='block'></div>
+		<div id='b_2' class='block'></div>
+		<div id='b_3' class='block'></div>
+		<div id="progress"></div>
+	</div>
+</body>
+</html>
