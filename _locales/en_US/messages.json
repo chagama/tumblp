@@ -1,0 +1,20 @@
+{
+  "extDescription": {
+    "message": "Print a Tumbler post easily."
+  },
+  "previewPostPrintMenu": {
+    "message": "Preview a Post Print"
+  },
+  "sliceGifAnimMenu": {
+    "message": "Slice Animated Gif"
+  },
+  "sliceGifAnimDifMenu": {
+    "message": "Slice Animated Gif by Diff"
+  },
+  "previewWindowTitle": {
+    "message": "Print Preview"
+  },
+  "notGifFileMessage": {
+    "message": "The Selected Image is not a Gif.\nPrease Slice on Animated GIF."
+  }
+}
