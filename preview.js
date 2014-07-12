@@ -1,9 +1,9 @@
 var TUMBLP = TUMBLP || {};
 TUMBLP.Preview = TUMBLP.Preview || {};
 
-window.onload = function(){
+$(document).ready(function(){
 	TUMBLP.Preview.Program.init();
-};
+});
 
 (function (exports){
 

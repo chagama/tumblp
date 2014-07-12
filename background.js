@@ -29,6 +29,10 @@ $(document).ready(function() {
 		chrome.contextMenus.create({
 			"title" : chrome.i18n.getMessage('previewPostPrintMenu'),
 			"contexts" : ["all"],
+			"documentUrlPatterns" : [
+				"https://www.tumblr.com/dashboard",
+				"https://www.tumblr.com/blog/*"
+				],
 			"onclick" : function(info, tab) {
 				
 				chrome.tabs.sendMessage(tab.id, {
@@ -51,6 +55,11 @@ $(document).ready(function() {
 		chrome.contextMenus.create({
 			"title" : chrome.i18n.getMessage('sliceGifAnimMenu'),
 			"contexts" : ["image"],
+			"documentUrlPatterns" : [
+				"https://www.tumblr.com/dashboard",
+				"https://www.tumblr.com/blog/*"
+				],
+			"targetUrlPatterns" : ["*://*/*.gif"],
 			"onclick" : function(info, tab) {
 				
 				chrome.tabs.sendMessage(tab.id, {
@@ -70,6 +79,11 @@ $(document).ready(function() {
 		chrome.contextMenus.create({
 			"title" : chrome.i18n.getMessage('sliceGifAnimDifMenu'),
 			"contexts" : ["image"],
+			"documentUrlPatterns" : [
+				"https://www.tumblr.com/dashboard",
+				"https://www.tumblr.com/blog/*"
+				],
+			"targetUrlPatterns" : ["*://*/*.gif"],
 			"onclick" : function(info, tab) {
 				
 				chrome.tabs.sendMessage(tab.id, {

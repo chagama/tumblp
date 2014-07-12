@@ -18,12 +18,11 @@ TUMBLP.Post = TUMBLP.Post || {};
 	
 })(TUMBLP.Post);
 
-
-$(document).ready(function(){
+window.onload = function(){
 	
 	TUMBLP.Post.Program.init();
 
-});
+};
 
 (function (exports){
 
@@ -63,9 +62,11 @@ $(document).ready(function(){
 		$preview = $("#preview");
 		$pages = $(".pages");
 		$pageContainer = $(".page_container");
+		$postContainer = $(".post_container");
+		$posts = $(".posts");
 		
 		Page.rescalePages();
-		$pageContainer.each(function(){
+		$postContainer.each(function(){
 			Page.evalPostHeight($(this));
 		});
 	});

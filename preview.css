@@ -89,7 +89,8 @@ body {
 .posts {
     display: -webkit-flex;
     -webkit-flex-flow: column wrap;
-    -webkit-flex: 1 1 auto;
+    -webkit-flex: 1 0 auto;
+    justify-content: center;
     width: 540px;
     z-index: 1;
     position: relative;
@@ -412,6 +413,7 @@ body {
 .gifdif .posts{
     width: 100%;
     padding: 0;
+    -webkit-flex: 1 1 auto;
     display: -webkit-flex;
     -webkit-flex-flow: column wrap;
     -webkit-justify-content: flex-start;
@@ -622,8 +624,11 @@ input[type="checkbox"]:checked + label{
 .op_avatar .post_container:after{
     display: block;
 }
+.op_avatar.posts_wrapper{
+    padding-left: 40px;
+}
 .op_avatar .posts{
-    padding-left: 85px;
+    padding-left: 60px;
 }
 .op_trim .frame{
     border: dotted 1px #666;
@@ -673,7 +678,8 @@ post_body
     max-width: 100%;
 }
 
-.largePost .post_title{
+.largePost .post_title,
+.largePost .post_body{
     font-size: 11pt; /*印刷用ルート文字サイズを参照*/
     line-height: 1.6em;
     -webkit-column-count: 2;
